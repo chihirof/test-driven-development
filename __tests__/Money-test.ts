@@ -2,10 +2,8 @@ import {Dollar} from '../src/Dollar'
   
   test('test multiplication', () => {
     const five = new Dollar(5);
-    const product1 = five.times(2);
-    expect(product1.amount).toBe(10);
-    const product2 = five.times(3);
-    expect(product2.amount).toBe(15);
+    expect(five.times(2)).toStrictEqual(new Dollar(10));
+    expect(five.times(3)).toStrictEqual(new Dollar(15));
   })
 
   test('equals()', () => {
