@@ -13,4 +13,5 @@
 - [ ] DollarとFrancの重複除去
 - [x] equalsの一般化
 - [ ] timesの一般化
-- [ ] DollarとFrancの比較
+- [x] DollarとFrancの比較
+- [ ] 通過の概念をいれる
