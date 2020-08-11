@@ -10,4 +10,5 @@ import {Dollar} from '../src/Dollar'
 
   test('equals()', () => {
     expect(new Dollar(5).equals(new Dollar(5))).toBe(true);
+    expect(new Dollar(5).equals(new Dollar(6))).toBe(false);
   })
