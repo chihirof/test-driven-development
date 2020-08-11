@@ -1,4 +1,5 @@
 import {Dollar} from '../src/Dollar'
+import {Franc} from '../src/Franc'
   
   test('test multiplication', () => {
     const five = new Dollar(5);
