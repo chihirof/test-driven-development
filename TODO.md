@@ -9,4 +9,7 @@
 - [ ] hashCode() を実装する
 - [ ] null との比較 (equals)
 - [ ] 他のオブジェクト との比較 (equals)
-- [ ] 5CHF * 2 = 10CHF
+- [x] 5CHF * 2 = 10CHF
+- [ ] DollarとFrancの重複除去
+- [ ] equalsの一般化
+- [ ] timesの一般化
