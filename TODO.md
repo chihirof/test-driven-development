@@ -9,3 +9,4 @@
 - [ ] hashCode() を実装する
 - [ ] null との比較 (equals)
 - [ ] 他のオブジェクト との比較 (equals)
+- [ ] 5CHF * 2 = 10CHF
