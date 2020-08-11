@@ -7,3 +7,7 @@ import {Dollar} from '../src/Dollar'
     const product2 = five.times(3);
     expect(product2.amount).toBe(15);
   })
+
+  test('equals()', () => {
+    expect(new Dollar(5).equals(new Dollar(5))).toBe(true);
+  })
