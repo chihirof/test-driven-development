@@ -1,12 +1,12 @@
-export class Franc {
+import { Money } from "./Money";
+
+export class Franc extends Money{
   
-  constructor(private readonly amount: number){}
+  constructor(amount: number){
+    super(amount)
+  }
 
   times(multiplier: number){
     return new Franc(this.amount * multiplier);
-  }
-
-  equals(dollar: Franc): boolean{
-    return this.amount == dollar.amount;
   }
 }
