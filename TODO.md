@@ -5,5 +5,5 @@
 - [ ] amount を privateにする
 - [x] Dollarの副作用をなんとかする
 - [ ] Moneyの丸め処理をなんとかする
-- [ ] equals() を実装する
+- [x] equals() を実装する
 - [ ] hashCode() を実装する
