@@ -26,3 +26,4 @@
 - [ ] toStrictEqual と toEqual の違いは何か調べる
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5 が Moneyを返す
+- [ ] Bank.reduce(Money)
