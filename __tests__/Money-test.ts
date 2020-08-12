@@ -26,3 +26,11 @@ import { Bank } from '../src/Bank';
     const reduced = bank.reduce(sum, 'USD');
     expect(reduced).toEqual(Money.dollar(10));
   });
+
+  test('pulus() returns Sum', () => {
+    const five: Money = Money.dollar(5);
+    const result: Sum = five.plus(five)
+    expect(result.augend).toBe(five)
+    expect(result.addend).toBe(five)
+
+  })
