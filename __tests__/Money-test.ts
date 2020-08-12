@@ -35,3 +35,10 @@ import { Sum } from '../src/Sum';
     expect(sum.augend).toBe(five)
     expect(sum.addend).toBe(five)
   })
+
+  test('reduce() Sum', () => {
+    const sum = Money.dollar(3).plus(Money.dollar(4))
+    const bank = new Bank();
+    const reduced = bank.reduce(sum, 'USD');
+    expect(reduced).toBe(Money.dollar(7)
+  })
