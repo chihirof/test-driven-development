@@ -12,7 +12,7 @@
 - [x] 5CHF * 2 = 10CHF
 - [ ] DollarとFrancの重複除去
 - [x] equalsの一般化
-- [ ] timesの一般化
+- [x] timesの一般化
 - [x] DollarとFrancの比較
 - [x] 通過の概念をいれる
 - [x] JavaScriptの循環参照問題を解決する
