@@ -19,3 +19,7 @@ https://typescript-jp.gitbook.io/deep-dive/getting-started
 ### jest
 
 https://typescript-jp.gitbook.io/deep-dive/intro-1/jest
+
+### lint & prettier
+
+https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md
