@@ -21,6 +21,10 @@ export class Money {
     return this.currencyStr;
   }
 
+  plus(addend: Money){
+    return new Money(this.amount + addend.amount, this.currencyStr)
+  }
+
   toString(): string {
     return this.amount + ' ' + this.currencyStr;
   }
