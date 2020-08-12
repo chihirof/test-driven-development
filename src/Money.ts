@@ -14,6 +14,8 @@ export abstract class Money {
   }
 
   abstract times(multiplier: number): Money;
+
+  abstract currency(): string;
 }
 
 class Dollar extends Money {
@@ -25,6 +27,10 @@ class Dollar extends Money {
   times(multiplier: number): Money {
     return new Dollar(this.amount * multiplier);
   }
+
+  currency() {
+    return 'USD';
+  }
 }
 
 class Franc extends Money {
@@ -35,5 +41,9 @@ class Franc extends Money {
 
   times(multiplier: number): Money {
     return new Franc(this.amount * multiplier);
+  }
+
+  currency() {
+    return 'CHF';
   }
 }
