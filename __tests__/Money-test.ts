@@ -42,3 +42,9 @@ import { Sum } from '../src/Sum';
     const reduced = bank.reduce(sum, 'USD');
     expect(reduced).toStrictEqual(Money.dollar(7))
   })
+
+  test('reduce() Money', () => {
+    const bank = new Bank();
+    const reduced = bank.reduce(Money.dollar(1), 'USD');
+    expect(reduced).toStrictEqual(Money.dollar(1))
+  })

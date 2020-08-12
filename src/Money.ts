@@ -28,6 +28,10 @@ export class Money implements Expression {
     return new Sum(this, addend);
   }
 
+  reduce(to: string) {
+    return this;
+  }
+
   toString(): string {
     return this.amount + ' ' + this.currencyStr;
   }
