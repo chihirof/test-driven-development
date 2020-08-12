@@ -19,3 +19,8 @@
   - モジュールの循環参照になっていたので、一つのファイルに入れた
 - [x] test Franc multiplication の削除
 - [ ] toStrictEqual と toEqual の違いは何か調べる
+
+---
+
+- [ ] $5 + 10 CHF = $10 (レートが2:1の場合)
+- [ ] toStrictEqual と toEqual の違いは何か調べる
