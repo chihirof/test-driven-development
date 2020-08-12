@@ -40,5 +40,5 @@ import { Sum } from '../src/Sum';
     const sum = Money.dollar(3).plus(Money.dollar(4))
     const bank = new Bank();
     const reduced = bank.reduce(sum, 'USD');
-    expect(reduced).toBe(Money.dollar(7)
+    expect(reduced).toStrictEqual(Money.dollar(7))
   })

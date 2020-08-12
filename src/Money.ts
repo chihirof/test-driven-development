@@ -2,7 +2,7 @@ import { Expression } from "./Expression";
 import { Sum } from "./Sum";
 
 export class Money implements Expression {
-  constructor(protected readonly amount: number, protected readonly currencyStr: string) {}
+  constructor(public readonly amount: number, public readonly currencyStr: string) {}
 
   equals(money: Money): boolean {
     return this.amount === money.amount && this.currency() === money.currency();
