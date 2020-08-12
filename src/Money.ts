@@ -28,6 +28,6 @@ class Dollar extends Money {
 
 class Franc extends Money {
   times(multiplier: number): Money {
-    return Money.franc(this.amount * multiplier)
+    return Money.franc(this.amount * multiplier);
   }
 }

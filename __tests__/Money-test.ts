@@ -23,4 +23,4 @@ import { Money } from '../src/Money';
   test('test Currency', () => {
     expect(Money.dollar(1).currency()).toBe('USD');
     expect(Money.franc(1).currency()).toBe('CHF');
-  })
+  });
