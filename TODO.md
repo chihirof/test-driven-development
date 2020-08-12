@@ -10,12 +10,12 @@
 - [ ] null との比較 (equals)
 - [ ] 他のオブジェクト との比較 (equals)
 - [x] 5CHF * 2 = 10CHF
-- [ ] DollarとFrancの重複除去
+- [x] DollarとFrancの重複除去
 - [x] equalsの一般化
 - [x] timesの一般化
 - [x] DollarとFrancの比較
 - [x] 通過の概念をいれる
 - [x] JavaScriptの循環参照問題を解決する
   - モジュールの循環参照になっていたので、一つのファイルに入れた
-- [ ] test Franc multiplication の削除
+- [x] test Franc multiplication の削除
 - [ ] toStrictEqual と toEqual の違いは何か調べる
