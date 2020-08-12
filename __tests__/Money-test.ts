@@ -30,7 +30,8 @@ import { Sum } from '../src/Sum';
 
   test('pulus() returns Sum', () => {
     const five: Money = Money.dollar(5);
-    const result: Sum = five.plus(five)
-    expect(result.augend).toBe(five)
-    expect(result.addend).toBe(five)
+    const result: Expression = five.plus(five)
+    const sum = result as Sum
+    expect(sum.augend).toBe(five)
+    expect(sum.addend).toBe(five)
   })
