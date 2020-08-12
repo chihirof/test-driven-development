@@ -1,6 +1,7 @@
 import { Money } from '../src/Money';
 import { Expression } from '../src/Expression';
 import { Bank } from '../src/Bank';
+import { Sum } from '../src/Sum';
 
   test('test multiplication', () => {
     const five: Money = Money.dollar(5);
@@ -32,5 +33,4 @@ import { Bank } from '../src/Bank';
     const result: Sum = five.plus(five)
     expect(result.augend).toBe(five)
     expect(result.addend).toBe(five)
-
   })
