@@ -14,6 +14,7 @@
 - [x] equalsの一般化
 - [ ] timesの一般化
 - [x] DollarとFrancの比較
-- [ ] 通過の概念をいれる
+- [x] 通過の概念をいれる
 - [x] JavaScriptの循環参照問題を解決する
   - モジュールの循環参照になっていたので、一つのファイルに入れた
+- [ ] test Franc multiplication の削除
