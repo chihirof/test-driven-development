@@ -1,8 +1,9 @@
 import {Dollar} from '../src/Dollar'
 import {Franc} from '../src/Franc'
+import { Money } from '../src/Money';
   
   test('test multiplication', () => {
-    const five = new Dollar(5);
+    const five = Money.dollar(5);
     expect(five.times(2)).toStrictEqual(new Dollar(10));
     expect(five.times(3)).toStrictEqual(new Dollar(15));
   })
