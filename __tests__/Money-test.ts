@@ -16,3 +16,8 @@ import { Money, Franc } from '../src/Money';
     expect(Money.dollar(1).currency()).toBe('USD');
     expect(Money.franc(1).currency()).toBe('CHF');
   });
+
+  test('test simple addition', () => {
+    const sum: Money = Money.dollar(5).plus(Money.dollar(5));
+    expect(sum).toEqual(Money.dollar(10));
+  });
