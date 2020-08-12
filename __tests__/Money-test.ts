@@ -19,3 +19,8 @@ import { Money } from '../src/Money';
     expect(five.times(2)).toStrictEqual(Money.franc(10));
     expect(five.times(3)).toStrictEqual(Money.franc(15));
   });
+
+  test('test Currency', () => {
+    expect(Money.dollar(1).currency()).toBe('USD');
+    expect(Money.franc(1).currency()).toBe('CHF');
+  })
