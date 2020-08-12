@@ -1,9 +1,9 @@
-import { Money } from '../src/Money';
+import { Money, Franc } from '../src/Money';
 
   test('test multiplication', () => {
     const five: Money = Money.dollar(5);
-    expect(five.times(2)).toStrictEqual(Money.dollar(10));
-    expect(five.times(3)).toStrictEqual(Money.dollar(15));
+    expect(five.times(2)).toEqual(Money.dollar(10));
+    expect(five.times(3)).toEqual(Money.dollar(15));
   });
 
   test('equals()', () => {
@@ -14,10 +14,14 @@ import { Money } from '../src/Money';
     expect(Money.franc(5).equals(Money.dollar(5))).toBe(false);
   });
 
+  test('equals() different class', () => {
+    expect(new Money(5, 'CHF').equals(new Franc(5, 'CHF'))).toBe(true);
+  });
+
   test('test Franc multiplication', () => {
     const five = Money.franc(5);
-    expect(five.times(2)).toStrictEqual(Money.franc(10));
-    expect(five.times(3)).toStrictEqual(Money.franc(15));
+    expect(five.times(2)).toEqual(Money.franc(10));
+    expect(five.times(3)).toEqual(Money.franc(15));
   });
 
   test('test Currency', () => {

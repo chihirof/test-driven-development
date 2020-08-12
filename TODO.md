@@ -18,3 +18,4 @@
 - [x] JavaScriptの循環参照問題を解決する
   - モジュールの循環参照になっていたので、一つのファイルに入れた
 - [ ] test Franc multiplication の削除
+- [ ] toStrictEqual と toEqual の違いは何か調べる

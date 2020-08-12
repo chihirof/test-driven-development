@@ -1,8 +1,8 @@
-export abstract class Money {
+export class Money {
   constructor(protected readonly amount: number, protected readonly currencyStr: string) {}
 
   equals(money: Money): boolean {
-    return this.amount === money.amount && money.constructor.name === this.constructor.name;
+    return this.amount === money.amount && this.currency() === money.currency();
   }
 
   static dollar(amount: number): Money {
@@ -13,21 +13,21 @@ export abstract class Money {
     return new Franc(amount, 'CHF');
   }
 
-  abstract times(multiplier: number): Money;
+  times(multiplier: number): Money|null{
+    return new Money(this.amount * multiplier, this.currencyStr)
+  };
 
   currency() {
     return this.currencyStr;
   }
-}
 
-class Dollar extends Money {
-  times(multiplier: number): Money {
-    return new Dollar(this.amount * multiplier, this.currencyStr)
+  toString(): string {
+    return this.amount + ' ' + this.currencyStr;
   }
 }
 
-class Franc extends Money {
-  times(multiplier: number): Money {
-    return new Franc(this.amount * multiplier, this.currencyStr)
-  }
+export class Dollar extends Money {
+}
+
+export class Franc extends Money {
 }
