@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "eslint . --ext .js,.jsx,.ts,.ts --fix && jest",
+    "test-w": "jest --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.ts --fix",
     "tsc": "tsc"
   },
   "keywords": [],
