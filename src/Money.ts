@@ -1,4 +1,6 @@
-export class Money {
+import { Expression } from "./Expression";
+
+export class Money implements Expression {
   constructor(protected readonly amount: number, protected readonly currencyStr: string) {}
 
   equals(money: Money): boolean {
@@ -14,15 +16,15 @@ export class Money {
   }
 
   times(multiplier: number): Money|null{
-    return new Money(this.amount * multiplier, this.currencyStr)
+    return new Money(this.amount * multiplier, this.currencyStr);
   };
 
   currency() {
     return this.currencyStr;
   }
 
-  plus(addend: Money){
-    return new Money(this.amount + addend.amount, this.currencyStr)
+  plus(addend: Money): Expression {
+    return new Money(this.amount + addend.amount, this.currencyStr);
   }
 
   toString(): string {
