@@ -48,3 +48,10 @@ import { Sum } from '../src/Sum';
     const reduced = bank.reduce(Money.dollar(1), 'USD');
     expect(reduced).toStrictEqual(Money.dollar(1))
   })
+
+  test('reduce() Money different currency', () => {
+    const bank = new Bank();
+    bank.addRate('CHF', 'USD', 2);
+    const reduced = bank.reduce(Money.franc(2), 'USD');
+    expect(reduced).toStrictEqual(Money.dollar(1))
+  })
