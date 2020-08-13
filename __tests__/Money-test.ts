@@ -55,3 +55,7 @@ import { Sum } from '../src/Sum';
     const reduced = bank.reduce(Money.franc(2), 'USD');
     expect(reduced).toStrictEqual(Money.dollar(1))
   })
+
+  test('identity rate', () => {
+    expect(new Bank().rate('USD', 'USD')).toBe(1)
+  })

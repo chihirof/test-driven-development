@@ -24,7 +24,7 @@
 
 - [ ] $5 + 10 CHF = $10 (レートが2:1の場合)
 - [ ] toStrictEqual と toEqual の違いは何か調べる
-- [ ] $5 + $5 = $10
+- [x] $5 + $5 = $10
 - [ ] $5 + $5 が Moneyを返す
 - [x] Bank.reduce(Money)
-- [ ] Money を変換して換算を行う
+- [x] Money を変換して換算を行う
