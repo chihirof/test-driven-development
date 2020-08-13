@@ -17,11 +17,11 @@ export class Money implements Expression {
     return new Money(amount, 'CHF');
   }
 
-  times(multiplier: number): Expression{
+  times(multiplier: number): Expression {
     return new Money(this.amount * multiplier, this.currencyStr);
   };
 
-  currency() {
+  currency(): string {
     return this.currencyStr;
   }
 
@@ -29,7 +29,7 @@ export class Money implements Expression {
     return new Sum(this, addend);
   }
 
-  reduce(bank: Bank, to: string) {
+  reduce(bank: Bank, to: string): Money {
     const rate = bank.rate(this.currency(), to);
     return new Money(this.amount / rate, to);
   }
