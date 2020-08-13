@@ -28,4 +28,4 @@
 - [ ] $5 + $5 が Moneyを返す
 - [x] Bank.reduce(Money)
 - [x] Money を変換して換算を行う
-- [ ] Sum.plus
+- [x] Sum.plus

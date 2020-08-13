@@ -11,6 +11,6 @@ export class Sum implements Expression{
   }
 
   plus(addend: Expression){
-    return null;
+    return new Sum(this, addend);
   }
 }
