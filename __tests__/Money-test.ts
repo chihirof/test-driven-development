@@ -78,3 +78,13 @@ import { Sum } from '../src/Sum';
     const result = bank.reduce(sum, 'USD')
     expect(result).toStrictEqual(Money.dollar(15))
   })
+
+  test('sum times', () => {
+    const fiveBucks: Expression = Money.dollar(5);
+    const tenFranc: Expression = Money.franc(10);
+    const bank = new Bank();
+    bank.addRate('CHF', 'USD', 2)
+    const sum = new Sum(fiveBucks, tenFranc).times(2)
+    const result = bank.reduce(sum, 'USD')
+    expect(result).toStrictEqual(Money.dollar(20))
+  })

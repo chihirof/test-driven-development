@@ -29,4 +29,4 @@
 - [x] Bank.reduce(Money)
 - [x] Money を変換して換算を行う
 - [x] Sum.plus
-- [ ] Expression.times
+- [x] Expression.times
