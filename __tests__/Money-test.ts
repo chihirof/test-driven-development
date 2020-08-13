@@ -59,3 +59,12 @@ import { Sum } from '../src/Sum';
   test('identity rate', () => {
     expect(new Bank().rate('USD', 'USD')).toBe(1)
   })
+
+  test('Mixed Addition', () => {
+    const fiveBucks: Expression = Money.dollar(5);
+    const tenFranc: Expression = Money.franc(10);
+    const bank = new Bank();
+    bank.addRate('CHF', 'USD', 2)
+    const result = bank.reduce(fiveBucks.plus(tenFranc), 'USD')
+    expect(result).toStrictEqual(Money.dollar(10))
+  })
